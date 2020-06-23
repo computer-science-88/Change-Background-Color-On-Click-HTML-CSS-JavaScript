@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Demo.css">
+</head>
+<body>
+    <div class="box">
+        <a id="red" onclick="changeColor('red')">Red</a>
+        <a id="green" onclick="changeColor('green')">Green</a>
+        <a id="blue" onclick="changeColor('blue')">Blue</a>
+        <a id="pink" onclick="changeColor('pink')">Pink</a>
+        <a id="purple" onclick="changeColor('purple')">Purple</a>
+        <a id="yellow" onclick="changeColor('yellow')">Yellow</a>
+    </div>
+
+    <script>
+        function changeColor(id){
+            document.body.style.background=document.getElementById(id).innerHTML;
+        }
+    </script>
+</body>
+</html>
